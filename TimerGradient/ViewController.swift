@@ -24,7 +24,17 @@ class ViewController: UIViewController {
         
         UIView.animate(withDuration: 2,delay: 0,options: .allowUserInteraction ,animations: {[self] in
             
-            gradient.colors = [UIColor(red: CGFloat.random(in: 0...255) / 255,green:CGFloat.random(in: 0...255) / 255,blue: CGFloat.random(in: 0...255) / 255,alpha: CGFloat.random(in: 0.0...1.0)).cgColor,UIColor(red: CGFloat.random(in: 0...255) / 255,green:CGFloat.random(in: 0...255) / 255,blue: CGFloat.random(in: 0...255) / 255,alpha: CGFloat.random(in: 0.0...1.0)).cgColor]
+            gradient.colors = [
+                
+                UIColor(red: CGFloat.random(in: 0...255) / 255,
+                        green:CGFloat.random(in:0...255) / 255,
+                        blue: CGFloat.random(in: 0...255) / 255,
+                        alpha: CGFloat.random(in: 0.0...1.0)).cgColor,
+                UIColor(red: CGFloat.random(in: 0...255) / 255,
+                        green:CGFloat.random(in: 0...255) / 255,
+                        blue: CGFloat.random(in: 0...255) / 255,
+                        alpha: CGFloat.random(in: 0.0...1.0)).cgColor
+            ]
             
             gradient.startPoint = CGPoint(x: 0.5, y: 0.5)
             gradient.endPoint = CGPoint(x: 0.5, y: 0)
